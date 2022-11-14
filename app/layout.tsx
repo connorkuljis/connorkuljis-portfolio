@@ -26,6 +26,7 @@ export default function RootLayout({
 							<Link className={styles.nav} href="/">Connor Kuljis</Link>
 							<Link className={styles.nav} href="/blog">Blog</Link>
 							<Link className={styles.nav} href="/guestbook">Guest Book</Link>
+							<Link className={styles.nav} href="/resume">Resume</Link>
 						</h1>
 					</nav>
 
