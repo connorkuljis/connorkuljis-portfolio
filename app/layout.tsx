@@ -21,18 +21,19 @@ export default function RootLayout({
       <head />
 
 			<body className={syne.className}>
-				<header className={styles.container}>
-					<nav>
-						<h1>
-							<Link className={styles.nav} href="/">Connor Kuljis</Link>
-							<Link className={styles.nav} href="/blog">Blog</Link>
-							<Link className={styles.nav} href="/guestbook">Guest Book</Link>
-							<Link className={styles.nav} target="_blank" href={resumeLink}>Resume</Link>
-						</h1>
-					</nav>
-				</header>
-				<div>{children}</div>
+				<div className={styles.container}>
+					<header>
+						<nav className={styles.header}>
+								<Link className={styles.nav} href="/">Connor Kuljis</Link>
+								<Link className={styles.nav} href="/blog">Blog</Link>
+								<Link className={styles.nav} href="/guestbook">Guest Book</Link>
+								<Link className={styles.nav} target="_blank" href={resumeLink}>Resume</Link>
+						</nav>
+					</header>
+					<div>{children}</div>
+				</div>
 			</body>
+
     </html>
   )
 }

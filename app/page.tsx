@@ -1,8 +1,9 @@
 import styles from './page.module.css'
+import Footer from './footer'
 
 export default function Home() {
 	return (
-		<div className={styles.container}>
+		<div>
 			<main className={styles.main}>
 				<h2>👋 Hi, my name is Connor</h2>
 				<p>
@@ -13,7 +14,7 @@ export default function Home() {
 					and have a life full of experiences. 
 				</p>
 			</main>
-			<footer className={styles.footer} />
+			<Footer />
 		</div>
 	)
 }
