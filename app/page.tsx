@@ -6,9 +6,14 @@ export default function Home() {
 			<main className={styles.main}>
 				<h2>👋 Hi, my name is Connor</h2>
 				<p>
-					I study Software Engineering at Curtin University
+					I am a Computing student - with a major in Software Engineering at Curtin University.
+				</p>
+				<p>
+					My goal is to build software that helps people reach their potential
+					and have a life full of experiences. 
 				</p>
 			</main>
+			<footer className={styles.footer} />
 		</div>
 	)
 }

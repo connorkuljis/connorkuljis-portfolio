@@ -34,6 +34,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 # Learnings
-- create a shared layout between pages
-- basic routing between pages
-- 
+## Next 13 
+- Root layouts
+- `app` directory routing
+
+

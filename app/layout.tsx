@@ -10,6 +10,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+	const resumeLink = "https://connor-kuljis-resume.s3.ap-southeast-2.amazonaws.com/connor-kuljis-resume-nov-22.pdf"
   return (
     <html lang="en">
       {/*
@@ -20,20 +22,16 @@ export default function RootLayout({
 
 			<body className={syne.className}>
 				<header className={styles.container}>
-
 					<nav>
 						<h1>
 							<Link className={styles.nav} href="/">Connor Kuljis</Link>
 							<Link className={styles.nav} href="/blog">Blog</Link>
 							<Link className={styles.nav} href="/guestbook">Guest Book</Link>
-							<Link className={styles.nav} href="/resume">Resume</Link>
+							<Link className={styles.nav} target="_blank" href={resumeLink}>Resume</Link>
 						</h1>
 					</nav>
-
 				</header>
-
 				<div>{children}</div>
-
 			</body>
     </html>
   )

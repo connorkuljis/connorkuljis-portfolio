@@ -4,7 +4,11 @@ import { guestbook, PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
 
 async function getGuestBookItems() {
-	return prisma.guestbook.findMany()
+	return prisma.guestbook.findMany({
+		orderBy: {
+      updated_at: 'desc'
+    }
+	})
 }
 
 function Post({ body, created_by, created_at } : guestbook) {
@@ -30,7 +34,7 @@ export default async function GuestBook() {
 	const entries: guestbook[] = await getGuestBookItems()
 
 	return (
-		<div className={styles.grid}>
+		<div className={styles.container}>
 			{entries.map((entry) => (
 				<Post key={Number(entry.id)}{...entry} />
 				))}
