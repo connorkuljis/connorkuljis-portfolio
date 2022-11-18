@@ -1,13 +1,12 @@
 import styles from '../page.module.css'
 import deskPic from './desk_setup_2021.jpeg'
 import Image from 'next/image'
-import Footer from '../footer'
 
 export default function Blog() {
 	return (
 		<div>
 			<main>
-				<div className="center">
+				<div>
 					<p>Welcome to my blog!🗿</p>
 					<h1>My Computing Setup</h1>
 					<h2>Mac Mini 2020 (M1) - 8GB/256</h2>
@@ -63,7 +62,6 @@ export default function Blog() {
 					</ul>
 				</div>
 			</main>
-			<Footer />
 		</div>
 	)
 }

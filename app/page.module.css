@@ -1,28 +1,32 @@
 .nav {
-    margin-right: 40px;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.header {
-    padding: 20px 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .container {
-  padding: 0 2rem;
+  position: relative;
+  min-height: 100vh;
+}
+
+.wrap {
+  padding-bottom: 2.5rem; 
 }
 
 .blog {
   padding: 0 2rem;
+  margin-left: 2rem;
   text-align: left;
   word-wrap: break-word;
   width: 800px;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,12 +34,10 @@
 }
 
 .footer {
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 }
 
 .footer a {
