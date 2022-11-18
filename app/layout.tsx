@@ -17,8 +17,10 @@ export default function RootLayout({
       <head />
 			<body className={syne.className}>
         <div className={styles.container}>
-          <Header />
-  				<div className={styles.wrap}>{children}</div>
+          <div className="container mx-auto">
+            <Header />
+    				<div className={styles.wrap}>{children}</div>
+          </div>
           <Footer />
         </div>
 			</body>

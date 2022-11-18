@@ -34,7 +34,7 @@ export default async function GuestBook() {
 	const entries: guestbook[] = await getGuestBookItems()
 
 	return (
-		<div className={styles.container}>
+		<div>
 			{entries.map((entry) => (
 				<Post key={Number(entry.id)}{...entry} />
 				))}

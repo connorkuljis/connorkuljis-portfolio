@@ -1,12 +1,11 @@
 .nav {
-    margin-right: 40px;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.header {
+  font-size: 2.5rem;
+  font-weight: bold;
   padding-top: 2rem;
-  padding-left: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .container {
@@ -20,12 +19,14 @@
 
 .blog {
   padding: 0 2rem;
+  margin-left: 2rem;
   text-align: left;
   word-wrap: break-word;
   width: 800px;
 }
 
 .main {
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -2,8 +2,8 @@ import styles from "./page.module.css"
 
 export default function Home() {
 	return (
-		<main className={styles.main}>
-			<div className="">
+		<main>
+			<div>
 				<h2>👋 Hi, my name is Connor</h2>
 				<p>
 					I am a Computing student - with a major in Software Engineering at Curtin University.
