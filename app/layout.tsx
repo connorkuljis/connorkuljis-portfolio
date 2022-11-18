@@ -1,7 +1,7 @@
 import './globals.css'
 import { Syne } from '@next/font/google'
-import styles from './page.module.css'
-import Link from 'next/link'
+// import styles from './page.module.css'
+import Header from './header'
 
 const syne = Syne()
 
@@ -11,29 +11,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-	const resumeLink = "https://connor-kuljis-resume.s3.ap-southeast-2.amazonaws.com/connor-kuljis-resume-nov-22.pdf"
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
-
 			<body className={syne.className}>
-				<div className={styles.container}>
-					<header>
-						<nav className={styles.header}>
-								<Link className={styles.nav} href="/">Connor Kuljis</Link>
-								<Link className={styles.nav} href="/blog">Blog</Link>
-								<Link className={styles.nav} href="/guestbook">Guest Book</Link>
-								<Link className={styles.nav} target="_blank" href={resumeLink}>Resume</Link>
-						</nav>
-					</header>
-					<div>{children}</div>
-				</div>
+        <Header />
+				<div>{children}</div>
 			</body>
-
     </html>
   )
 }
