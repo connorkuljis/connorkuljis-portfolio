@@ -1,6 +1,8 @@
+import styles from "./page.module.css"
+
 export default function Footer() {
 	return (
-		<footer className="fixed bottom-0 left-0 w-full bg-white rounded-lg shadow md:py-8">
+		<footer className={styles.footer}>
 			<span>
 				<a 
 					className="mx-3 font-bold hover:underline" 

@@ -1,7 +1,6 @@
 import styles from '../page.module.css'
 import deskPic from './desk_setup_2021.jpeg'
 import Image from 'next/image'
-import Footer from '../footer'
 
 export default function Blog() {
 	return (
@@ -63,7 +62,6 @@ export default function Blog() {
 					</ul>
 				</div>
 			</main>
-			<Footer />
 		</div>
 	)
 }

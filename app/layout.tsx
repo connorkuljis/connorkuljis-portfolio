@@ -1,7 +1,8 @@
 import './globals.css'
 import { Syne } from '@next/font/google'
-// import styles from './page.module.css'
+import styles from './page.module.css'
 import Header from './header'
+import Footer from './footer'
 
 const syne = Syne()
 
@@ -15,8 +16,11 @@ export default function RootLayout({
     <html lang="en">
       <head />
 			<body className={syne.className}>
-        <Header />
-				<div>{children}</div>
+        <div className={styles.container}>
+          <Header />
+  				<div className={styles.wrap}>{children}</div>
+          <Footer />
+        </div>
 			</body>
     </html>
   )
