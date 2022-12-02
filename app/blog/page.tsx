@@ -1,4 +1,3 @@
-import styles from '../page.module.css'
 import deskPic from './desk_setup_2021.jpeg'
 import Image from 'next/image'
 
@@ -15,19 +14,19 @@ export default function Blog() {
 						alt={"Picture of white desk with a computing setup for programming"}
 					/>
 					<h3>Description</h3>
-					<p>Here's my setup. I have been using this setup since the start of 2021.</p>
+					<p>Here&apos;s my setup. I have been using this setup since the start of 2021.</p>
 					<p>I use it for programming, web browsing and for university.</p>
 					<p>The keyboard looks like it came from the 1980s - and it does, but I love it.</p>
 					<blockquote>
 						<em>
-						'Because keyboards are accessories to PC makers, they focus on
+						&quot;Because keyboards are accessories to PC makers, they focus on
 						minimizing the manufacturing costs. But that’s incorrect. When
 						America’s cowboys were in the middle of a trip and their horse died, they
 						would leave the horse there. But even if they were in the middle of a
 						desert, they would take their saddle with them. The horse was a consumable
 						good, but the saddle was an interface that their bodies had gotten used to.
 						In the same vein, PCs are consumable goods, while keyboards are important
-						interfaces.' - Philosophy of Professor Eiiti Wada / PFU Limited.
+						interfaces.&quot; - Philosophy of Professor Eiiti Wada / PFU Limited.
 					</em>
 					</blockquote>
 
@@ -38,7 +37,7 @@ export default function Blog() {
 					<h3>Components</h3>
 					<ul>
 						<li>
-							Monitor: 4K, 27" IPS (LG 27UK850-W) connected via Type-C
+							Monitor: 4K, 27 &lsquo; IPS (LG 27UK850-W) connected via Type-C
 						</li>
 						<li>
 							Device: 2020 Apple Mac Mini with Apple M1 Chip (8GB RAM, 256GB SSD Storage)
@@ -50,7 +49,7 @@ export default function Blog() {
 							Mouse: Logitech G Pro Wireless
 						</li>
 						<li>
-							Audio: FiiO USB DAC E-10 + IEMs or Koss Porta Pro's
+							Audio: FiiO USB DAC E-10 + IEMs or Koss Porta Pro&apos;s
 						</li>
 					</ul>
 					<h3>Software</h3>
