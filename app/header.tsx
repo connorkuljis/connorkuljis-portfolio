@@ -6,9 +6,9 @@ export default function Header() {
 		<header>
 			<nav className="flex py-8 space-x-16 text-xl">
 				<Link href="/">Connor Kuljis</Link>
-				<Link href="/blog">Blog</Link>
-				<Link href="/guestbook">Guest Book</Link>
-				<Link target="_blank" href={resumeLink}>Resume</Link>
+				<Link href="blog">Blog</Link>
+				<Link href="guestbook">Guest Book</Link>
+				<Link target="_blank" href={resumeLink}>Resume^</Link>
 			</nav>
 		</header> 
 	)
