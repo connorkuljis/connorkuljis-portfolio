@@ -4,7 +4,7 @@ import styles from './page.module.css'
 import Header from './header'
 import Footer from './footer'
 
-const syne = Inter({ weight: ['400']})
+const inter = Inter({ weight: ['400']})
 
 export default function RootLayout({
   children,
@@ -14,15 +14,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-        <body className={syne.className}>
-        <div className={styles.container}>
-          <div className="container mx-auto">
-            <Header />
-            <div className={styles.wrap}>{children}</div>
-          </div>
-          <Footer />
+      <body className={inter.className}>
+        <div className="h-full flex flex-col pt-2 antialiased">
+          <Header />
+          <div>{children}</div>
         </div>
-        </body>
+        <Footer />
+      </body>
     </html>
   )
 }
