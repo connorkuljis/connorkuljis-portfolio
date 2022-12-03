@@ -2,7 +2,7 @@ export default function Home() {
 	return (
 		<main>
 
-			<div className="text-right mx-12 ">
+			<div className="text-right mx-12 text-sm md:text-xl flex flex-col space-y-4">
 				<h2>Hi, my name is Connor</h2>
 				<p>
 					Software Engineering 23&lsquo; @ Curtin University
@@ -12,7 +12,7 @@ export default function Home() {
 					and have a life full of experiences. 
 				</p>
 			</div>
-			<div className="mt-4 bg-gray-300 h-24">
+			<div className="mt-4 bg-gray-100 h-24 rounded">
 			</div>
 		</main>
 	)

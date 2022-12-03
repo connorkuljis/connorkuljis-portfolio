@@ -17,7 +17,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="h-full flex flex-col pt-2 antialiased">
           <Header />
-          <div>{children}</div>
+          <div className="mx-4 md:mx-48">{children}</div>
         </div>
         <Footer />
       </body>
