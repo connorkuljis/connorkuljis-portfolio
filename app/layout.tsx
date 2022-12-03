@@ -1,29 +1,26 @@
 import './globals.css'
-import { Syne } from '@next/font/google'
+import { Inter } from '@next/font/google'
 import styles from './page.module.css'
 import Header from './header'
 import Footer from './footer'
 
-const syne = Syne()
+const inter = Inter({ weight: ['400']})
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-
   return (
     <html lang="en">
       <head />
-			<body className={syne.className}>
-        <div className={styles.container}>
-          <div className="container mx-auto">
-            <Header />
-    				<div className={styles.wrap}>{children}</div>
-          </div>
-          <Footer />
+      <body className={inter.className}>
+        <div className="h-full flex flex-col pt-2 antialiased">
+          <Header />
+          <div className="mx-4 md:mx-48">{children}</div>
         </div>
-			</body>
+        <Footer />
+      </body>
     </html>
   )
 }
