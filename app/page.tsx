@@ -6,7 +6,7 @@ export default function Home() {
 		<main>
 			<div className="text-right text-sm md:text-xl space-y-4">
 				<div className="flex justify-end">
-					<Image src={block} alt={"abstract blocks"} height={256}/>
+					<Image src={block} alt={"abstract blocks"} height={256} placeholder="blur"/>
 				</div>
 				<h2>Hi, my name is Connor</h2>
 				<p>
