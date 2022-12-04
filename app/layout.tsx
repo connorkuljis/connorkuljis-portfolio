@@ -15,11 +15,11 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body className={inter.className}>
-        <div className="h-full flex flex-col pt-2 antialiased">
+        <div className="flex flex-col h-screen justify-between pt-2">
           <Header />
-          <div className="mx-4 md:mx-48">{children}</div>
+          <div className="flex-grow mx-4 md:mx-48 2xl:mx-96">{children}</div>
+            <Footer />
         </div>
-        <Footer />
       </body>
     </html>
   )
