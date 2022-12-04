@@ -5,7 +5,7 @@ export default function Home() {
 	return (
 		<main>
 			<div className="text-right text-sm md:text-xl space-y-4">
-				<div className="ml-auto">
+				<div className="flex justify-end">
 					<Image src={block} alt={"abstract blocks"} height={256}/>
 				</div>
 				<h2>Hi, my name is Connor</h2>
