@@ -1,8 +1,13 @@
+import block from "../static/block.png"
+import Image from "next/image";
+
 export default function Home() {
 	return (
 		<main>
-
-			<div className="text-right mx-12 text-sm md:text-xl flex flex-col space-y-4">
+			<div className="text-right text-sm md:text-xl space-y-4">
+				<div className="ml-auto">
+					<Image src={block} alt={"abstract blocks"} height={256}/>
+				</div>
 				<h2>Hi, my name is Connor</h2>
 				<p>
 					Software Engineering 23&lsquo; @ Curtin University
@@ -10,6 +15,15 @@ export default function Home() {
 				<p>
 					&gt; My goal is to build software that helps people reach their potential
 					and have a life full of experiences. 
+				</p>
+				<p>
+					&gt; I love learning new things, and I think simple ideas are beautiful.
+				</p>
+				<p>
+					&gt; I am currently learning TypeScript, React and Node.JS.
+				</p>
+				<p>
+					&gt; I like keyboards.
 				</p>
 			</div>
 			<div className="mt-4 bg-gray-100 h-24 rounded">
