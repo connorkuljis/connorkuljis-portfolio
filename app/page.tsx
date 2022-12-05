@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
 	return (
 		<main>
-			<div className="text-right text-sm md:text-xl space-y-4">
+			<div className="text-right text-xs md:text-sm lg:text-base xl:text-lg xxl:text-xl space-y-4">
 				<div className="flex justify-end">
 					<Image src={block} alt={"abstract blocks"} height={256} placeholder="blur"/>
 				</div>
